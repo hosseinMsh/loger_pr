@@ -55,11 +55,11 @@ MIDDLEWARE = [
 ]
 
 ELASTIC_APM = {
-    'SERVICE_NAME': 'my-service-name',
+    'SERVICE_NAME': 'test',
 
     'SECRET_TOKEN': '',
     'DEBUG': True,
-    'SERVER_URL': 'https://172.26.137.182:8200',
+    'SERVER_URL': 'http://172.26.137.182:9200',
     'ENVIRONMENT': 'my-environment',
 
 }
