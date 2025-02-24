@@ -57,7 +57,7 @@ MIDDLEWARE = [
 ELASTIC_APM = {
   'SERVICE_NAME': 'my-service-name',
   'SECRET_TOKEN': 'test',
-  'SERVER_URL': 'https://kibana.ictc.sharif.ir/apm_',
+  'SERVER_URL': 'https://172.26.137.195:8950',
   'ENVIRONMENT': 'my-environment',
 }
 
