@@ -55,14 +55,12 @@ MIDDLEWARE = [
 ]
 
 ELASTIC_APM = {
-    'SERVICE_NAME': 'test',
-
-    'SECRET_TOKEN': '',
-    'DEBUG': True,
-    'SERVER_URL': 'http://172.26.137.188:8200',
-    'ENVIRONMENT': 'my-environment',
-
+  'SERVICE_NAME': 'my-service-name',
+  'SECRET_TOKEN': 'test',
+  'SERVER_URL': 'https://kibana.ictc.sharif.ir/apm_',
+  'ENVIRONMENT': 'my-environment',
 }
+
 
 
 ROOT_URLCONF = 'DjangoProject.urls'
