@@ -59,7 +59,7 @@ ELASTIC_APM = {
 
     'SECRET_TOKEN': '',
     'DEBUG': True,
-    'SERVER_URL': 'http://172.26.137.182:8200',
+    'SERVER_URL': '172.26.137.182:8200',
     'ENVIRONMENT': 'my-environment',
 
 }
