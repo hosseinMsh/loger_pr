@@ -3,7 +3,7 @@ from datetime import datetime
 
 from django.http import HttpResponse
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('test')
 
 def b(request):
     logger.error("Error message",exc_info=True)
