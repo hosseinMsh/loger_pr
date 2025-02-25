@@ -56,8 +56,8 @@ MIDDLEWARE = [
 
 ELASTIC_APM = {
   'SERVICE_NAME': 'my-service-name',
-  'SECRET_TOKEN': 'test',
-  'SERVER_URL': 'https://172.26.137.195:8950',
+  'SECRET_TOKEN': 'r584riHj6FAU-P6o1KyKhg952qiD-VirxCpD_NR7Uhc',
+  'SERVER_URL': 'http://localhost:8200',
   'ENVIRONMENT': 'my-environment',
 }
 
