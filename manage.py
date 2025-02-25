@@ -5,6 +5,7 @@ import sys
 
 
 def main():
+    from core.views import *
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DjangoProject.settings')
     try:
