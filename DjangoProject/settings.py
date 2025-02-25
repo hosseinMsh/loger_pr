@@ -158,7 +158,7 @@ LOGGING = {
             'propagate': False,
         },
         'test': {
-            'level': 'INFO',
+            'level': 'DEBUG',
             'handlers': ['elasticapm', 'console'],
             'propagate': False,
         },
