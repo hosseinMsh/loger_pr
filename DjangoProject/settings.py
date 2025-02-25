@@ -158,7 +158,7 @@ LOGGING = {
             'propagate': False,
         },
         'mysite': {
-            'level': 'WARNING',
+            'level': 'ERROR',
             'handlers': ['elasticapm'],
             'propagate': False,
         },
