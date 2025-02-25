@@ -1,6 +1,6 @@
 import logging
 
-logger = logging.getLogger('testlogger')
+logger = logging.getLogger('mysite')
 logger.error(
     'Could not find instance, doing something else',
     exc_info=True
