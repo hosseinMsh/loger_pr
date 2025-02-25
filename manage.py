@@ -6,18 +6,12 @@ from core.views import *
 
 
 def main():
-    logger.error("Error message")
-    logger.info("Info message")
-    logger.warning("Warning message")
-    logger.debug("Debug message")
-    logger.critical("Critical message")
-    logger.log(logging.ERROR, "Error message")
-    logger.log(logging.INFO, "Info message")
-    logger.log(logging.WARNING, "Warning message")
-    logger.log(logging.DEBUG, "Debug message")
-    logger.log(logging.INFO, "Info message")
-    logger.log(logging.WARNING, "Warning message")
-    logger.log(logging.DEBUG, "Debug message")
+    logger.error("Error message",exc_info=True)
+    logger.info("Info message",exc_info=True)
+    logger.warning("Warning message",exc_info=True)
+    logger.debug("Debug message",exc_info=True)
+    logger.critical("Critical message",exc_info=True)
+
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DjangoProject.settings')
     try:
