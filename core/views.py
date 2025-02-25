@@ -1,15 +1,17 @@
 import logging
 from datetime import datetime
 
+from django.http import HttpResponse
+
 logger = logging.getLogger('test')
 
-def b():
+def b(request):
     logger.error("Error message",exc_info=True)
     logger.info("Info message",exc_info=True)
     logger.warning("Warning message",exc_info=True)
     logger.debug("Debug message",exc_info=True)
     logger.critical("Critical message",exc_info=True)
-
+    return HttpResponse("Hello, world. You're at the polls index.")
 
 
 
