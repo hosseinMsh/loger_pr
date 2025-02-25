@@ -14,7 +14,7 @@ def b():
 
 
 
-def a():
+def a(request):
     logger.error(
         'There was some crazy error',
         exc_info=True,

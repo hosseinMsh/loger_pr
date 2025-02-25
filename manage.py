@@ -2,12 +2,11 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-# from core.views import *
+
 
 
 def main():
-    # a()
-    # b()
+
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DjangoProject.settings')
     try:
