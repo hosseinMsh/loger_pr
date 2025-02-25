@@ -164,7 +164,7 @@ LOGGING = {
         },
         # Log errors from the Elastic APM module to the console (recommended)
         'elasticapm.errors': {
-            'level': 'ERROR',
+            'level': 'DEBUG',
             'handlers': ['console'],
             'propagate': False,
         },
