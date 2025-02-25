@@ -2,10 +2,22 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from core.views import *
 
 
 def main():
-    from core.views import *
+    logger.error("Error message")
+    logger.info("Info message")
+    logger.warning("Warning message")
+    logger.debug("Debug message")
+    logger.critical("Critical message")
+    logger.log(logging.ERROR, "Error message")
+    logger.log(logging.INFO, "Info message")
+    logger.log(logging.WARNING, "Warning message")
+    logger.log(logging.DEBUG, "Debug message"))
+    logger.log(logging.INFO, "Info message")
+    logger.log(logging.WARNING, "Warning message")
+    logger.log(logging.DEBUG, "Debug message"))
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DjangoProject.settings')
     try:
