@@ -14,10 +14,10 @@ def main():
     logger.log(logging.ERROR, "Error message")
     logger.log(logging.INFO, "Info message")
     logger.log(logging.WARNING, "Warning message")
-    logger.log(logging.DEBUG, "Debug message"))
+    logger.log(logging.DEBUG, "Debug message")
     logger.log(logging.INFO, "Info message")
     logger.log(logging.WARNING, "Warning message")
-    logger.log(logging.DEBUG, "Debug message"))
+    logger.log(logging.DEBUG, "Debug message")
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DjangoProject.settings')
     try:
