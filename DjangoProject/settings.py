@@ -142,7 +142,7 @@ LOGGING = {
     },
     'handlers': {
         'elasticapm': {
-            'level': 'WARNING',
+            'level': 'DEBUG',
             'class': 'elasticapm.contrib.django.handlers.LoggingHandler',
         },
         'console': {
