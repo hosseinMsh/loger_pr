@@ -157,9 +157,9 @@ LOGGING = {
             'handlers': ['console'],
             'propagate': False,
         },
-        'mysite': {
-            'level': 'ERROR',
-            'handlers': ['elasticapm'],
+        'test': {
+            'level': 'DEBUG',
+            'handlers': ['elasticapm', 'console'],
             'propagate': False,
         },
         # Log errors from the Elastic APM module to the console (recommended)

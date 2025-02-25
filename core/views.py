@@ -1,22 +1,8 @@
 import logging
 from datetime import datetime
 
-logger = logging.getLogger('mysite')
-logger.error(
-    'Could not find instance, doing something else',
-)
-logger.info(
-    'Could not find instance, doing something else',
-    exc_info=True
-)
-logger.debug(
-    'Could not find instance, doing something else',
-    exc_info=True
-)
-logger.warning(
-    'Could not find instance, doing something else',
-    exc_info=True
-)
+logger = logging.getLogger('test')
+
 def b():
     logger.error("Error message",exc_info=True)
     logger.info("Info message",exc_info=True)
