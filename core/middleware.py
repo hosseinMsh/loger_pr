@@ -22,9 +22,9 @@ class LogIPMiddleware:
         response = self.get_response(request)
 
         if response.status_code == 404:
-            logger.warning(f"Page Not Found: `{request.path}` From IP: `{ip}`")
+            logger.warning(f"Page Not Found: [{request.path}] From IP: [{ip}]")
         else:
-            logger.info(f"Request made to: `{request.path}` From IP: `{ip}`")
+            logger.info(f"Request Made To: [{request.path}] From IP: [{ip}]")
 
         return response
 
