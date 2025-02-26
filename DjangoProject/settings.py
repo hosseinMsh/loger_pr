@@ -149,7 +149,13 @@ LOGGING = {
             'level': 'DEBUG',
             'class': 'logging.StreamHandler',
             'formatter': 'verbose'
-        }
+        },
+        'file': {  # Optional file handler
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+            'formatter': 'verbose',
+        },
     },
     'loggers': {
         'django.db.backends': {
@@ -157,14 +163,14 @@ LOGGING = {
             'handlers': ['console'],
             'propagate': False,
         },
-        'test': {
+        'core': {
             'level': 'DEBUG',
             'handlers': ['elasticapm', 'console'],
             'propagate': False,
         },
         # Log errors from the Elastic APM module to the console (recommended)
         'elasticapm.errors': {
-            'level': 'DEBUG',
+            'level': 'ERROR',
             'handlers': ['console'],
             'propagate': False,
         },
