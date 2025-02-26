@@ -18,12 +18,13 @@ class LogIPMiddleware:
 
     def __call__(self, request):
         ip = get_client_ip(request)
-        logger.info(f"Request made to: {request.path} from IP: {ip}")
 
         response = self.get_response(request)
 
         if response.status_code == 404:
             logger.warning(f"Page not found: {request.path} from IP: {ip}")
+        else:
+            logger.info(f"Request made to: {request.path} from IP: {ip}")
 
         return response
 
