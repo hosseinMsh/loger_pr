@@ -148,7 +148,7 @@ LOGGING = {
             'class': 'elasticapm.contrib.django.handlers.LoggingHandler',
         },
         'console': {
-            'level': 'DEBUG',
+            'level': 'ERROR',
             'class': 'logging.StreamHandler',
             'formatter': 'verbose'
         },
