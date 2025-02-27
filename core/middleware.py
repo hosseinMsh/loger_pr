@@ -47,7 +47,7 @@ class LogRequestMiddleware:
         logger.info(f"GET parameters: {get_params}")
         logger.info(f"POST data: {post_data}")
         logger.info(f"Headers: {headers}")
-        logger.info(f":User  {user}, IP: {ip}")
+        logger.info(f"User:  {user}, IP: {ip}")
 
         response = self.get_response(request)
         return response

@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'elasticapm.contrib.django.middleware.TracingMiddleware',
     'elasticapm.contrib.django.middleware.Catch404Middleware',
     'core.middleware.LogIPMiddleware',
-    'core.middleware.LogRequestMiddleware'
+    # 'core.middleware.LogRequestMiddleware'
 
 ]
 
@@ -59,7 +59,7 @@ ELASTIC_APM = {
     "DEBUG": True,
     'SERVICE_NAME': 'my-service-name',
     'SECRET_TOKEN': 'r584riHj6FAU-P6o1KyKhg952qiD-VirxCpD_NR7Uhc',
-    'SERVER_URL': 'http://localhost:8200',
+    # 'SERVER_URL': 'http://localhost:8200',
     'ENVIRONMENT': 'my-environment',
 }
 
